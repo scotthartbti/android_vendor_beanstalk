@@ -278,6 +278,11 @@ ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
     endif
 endif
 
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+	vendor/cm/prebuilt/etc/hosts.og:system/etc/hosts.og
+
 ifeq ($(CM_BUILDTYPE), RELEASE)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
         CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
