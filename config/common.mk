@@ -153,7 +153,9 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMUpdater \
     CMAccount \
-    CMHome
+    CMHome \
+    Superuser \
+    su
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -212,9 +214,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
-    Superuser \
-    su
+    procrank
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
@@ -226,7 +226,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 else
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
 
 endif
 
