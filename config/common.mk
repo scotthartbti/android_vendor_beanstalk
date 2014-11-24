@@ -156,7 +156,9 @@ PRODUCT_PACKAGES += \
     CMAccount \
     CMHome \
     Superuser \
-    su
+    su \
+    procmem \
+    procrank
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
