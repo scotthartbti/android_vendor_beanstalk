@@ -135,6 +135,10 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     VoicePlus \
