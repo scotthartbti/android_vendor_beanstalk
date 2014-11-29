@@ -1,8 +1,5 @@
 PRODUCT_BRAND ?= cyanogenmod
 
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -138,6 +135,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/cm/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     VoicePlus \
@@ -157,9 +163,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMUpdater \
     CMAccount \
-    CMHome \
-    Superuser \
-    su
+    CMHome
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
