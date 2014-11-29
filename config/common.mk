@@ -144,6 +144,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
+# Custom BeanStalk packages
+PRODUCT_PACKAGES += \
+    BeanStalkPapers
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     VoicePlus \
