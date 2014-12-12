@@ -206,11 +206,6 @@ PRODUCT_PACKAGES += \
     procmem \
     procrank
 
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/beanstalk/proprietary/Term.apk:system/app/Term/Term.apk \
-    vendor/beanstalk/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
-
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
