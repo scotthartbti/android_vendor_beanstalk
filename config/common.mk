@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     CMFileManager \
     LockClock \
-    alogcat \
+    alogcat
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
