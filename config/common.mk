@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Eleven \
     CMFileManager \
-    LockClock
+    LockClock \
+    alogcat \
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
