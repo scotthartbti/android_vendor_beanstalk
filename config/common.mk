@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
+    
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.camera-sound=1
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
