@@ -213,7 +213,7 @@ PRODUCT_COPY_FILES += \
 	vendor/beanstalk/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
 	vendor/beanstalk/prebuilt/etc/hosts.og:system/etc/hosts.og
 
-BeanStalk_Version=5.0050
+BeanStalk_Version=5.1.00
 BS_VERSION := BeanStalk-$(BeanStalk_Version)-$(shell date -u +%Y%m%d)-$(BS_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
