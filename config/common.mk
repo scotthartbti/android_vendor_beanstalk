@@ -85,11 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/beanstalk/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-# HFM Files
-PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
-    vendor/beanstalk/prebuilt/etc/hosts.og:system/etc/hosts.og
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
