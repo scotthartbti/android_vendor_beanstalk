@@ -110,6 +110,13 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Profiles
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
