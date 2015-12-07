@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMWallpapers \
     CMFileManager \
+    OmniSwitch \
     Eleven \
     LockClock \
     CMUpdater \
