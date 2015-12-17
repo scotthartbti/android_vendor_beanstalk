@@ -120,12 +120,11 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    CMWallpapers \
+    BeanStalkPapers \
     CMFileManager \
     OmniSwitch \
     Eleven \
     LockClock \
-    CMUpdater \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator
