@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     AudioFX \
     BeanStalkPapers \
+    Chromium \
     CMFileManager \
     OmniSwitch \
     Eleven \
