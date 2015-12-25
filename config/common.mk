@@ -64,15 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
-# Proprietary latinime libs needed for Keyboard swyping
-ifeq ($(TARGET_ARCH),arm64)
-PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
-else
-PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-endif
-
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
