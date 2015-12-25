@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     BeanStalkPapers \
     Chromium \
+    KernelAdiutor \
     CMFileManager \
     OmniSwitch \
     Eleven \
