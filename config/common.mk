@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Eleven \
     LockClock \
+    CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator
 
