@@ -203,11 +203,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
-    su
+    procrank
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
+    persist.sys.root_access=0
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
