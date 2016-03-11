@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
 BeanStalk_Version=6.08
 BS_VERSION := BeanStalk-$(BeanStalk_Version)-$(shell date -u +%Y%m%d)-$(BS_BUILD)
