@@ -207,7 +207,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
-BeanStalk_Version=6.13
+BeanStalk_Version=6.14
 BS_VERSION := BeanStalk-$(BeanStalk_Version)-$(shell date -u +%Y%m%d)-$(BS_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
