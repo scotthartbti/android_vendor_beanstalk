@@ -140,8 +140,7 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    LiveLockScreenService \
-    WeatherProvider
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
