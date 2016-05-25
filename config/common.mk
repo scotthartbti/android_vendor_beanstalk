@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 # Backup Tool
-ifneq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
+ifeq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/beanstalk/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
