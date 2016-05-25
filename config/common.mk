@@ -57,13 +57,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 # Backup Tool
-ifeq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/beanstalk/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/beanstalk/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/beanstalk/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-endif
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
