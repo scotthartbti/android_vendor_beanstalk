@@ -139,7 +139,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     LiveLockScreenService \
-    DataUsageProvider
+    DataUsageProvider \
+    WallpaperPicker
 
 # Exchange support
 PRODUCT_PACKAGES += \
