@@ -1,6 +1,8 @@
 # Inherit common CM stuff
 $(call inherit-product, vendor/beanstalk/config/common.mk)
 
+PRODUCT_SIZE := full
+
 # Include CM audio files
 include vendor/beanstalk/config/cm_audio.mk
 
