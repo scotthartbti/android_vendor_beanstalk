@@ -108,6 +108,7 @@ include vendor/beanstalk/config/cmsdk_common.mk
 
 # Required CM packages
 PRODUCT_PACKAGES += \
+    CMAudioService \
     Development \
     BluetoothExt \
     Profiles
