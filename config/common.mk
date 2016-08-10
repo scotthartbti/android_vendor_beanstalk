@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     BeanStalkPapers \
     KernelAdiutor \
+    ViPER4Android \
     CMFileManager \
     OmniSwitch \
     Eleven \
