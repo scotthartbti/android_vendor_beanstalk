@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy ViPER4Android libs
 PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/common/lib/libv4a_fx_ics_NEON.so:system/lib/soundfx/libv4a_fx_ics.so
+    vendor/beanstalk/prebuilt/common/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
