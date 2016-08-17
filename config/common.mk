@@ -88,10 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
-# Copy ViPER4Android libs
-PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/common/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so
-
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -141,7 +137,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     BeanStalkPapers \
     KernelAdiutor \
-    ViPER4Android \
     CMFileManager \
     OmniSwitch \
     Eleven \
