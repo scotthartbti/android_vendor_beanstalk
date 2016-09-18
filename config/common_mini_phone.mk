@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/cm/config/common_mini.mk)
+$(call inherit-product, vendor/beanstalk/config/common_mini.mk)
 
 # Required CM packages
 PRODUCT_PACKAGES += \
@@ -6,7 +6,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
+        vendor/beanstalk/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
 endif
 
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/beanstalk/config/telephony.mk)
