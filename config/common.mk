@@ -139,6 +139,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
+    KernelAdiutor \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
