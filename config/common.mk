@@ -252,8 +252,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/cm/build/target/product/security/cm \
-        vendor/cm/build/target/product/security/cm-devkey
+        vendor/beanstalk/build/target/product/security/cm \
+        vendor/beanstalk/build/target/product/security/cm-devkey
 endif
 
 -include vendor/cm-priv/keys/keys.mk
