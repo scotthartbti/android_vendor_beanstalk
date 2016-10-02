@@ -140,6 +140,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librsjni
 
+#DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+ 
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
