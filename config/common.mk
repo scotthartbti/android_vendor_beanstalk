@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     AudioFX \
     BeanStalkPapers \
+    OmniSwitch \
     CMFileManager \
     Eleven \
     LockClock \
