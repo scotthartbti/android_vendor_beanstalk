@@ -152,7 +152,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     BeanStalkPapers \
     OmniSwitch \
-    KernelAdiutor \
     CMFileManager \
     CMSettingsProvider \
     CyanogenSetupWizard \
