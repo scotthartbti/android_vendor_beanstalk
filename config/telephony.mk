@@ -14,4 +14,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS Default Permission
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/qcom_ims.xml:system/etc/default-permissions/qcom_ims.xml
+    vendor/beanstalk/config/permissions/qcom_ims.xml:system/etc/default-permissions/qcom_ims.xml
