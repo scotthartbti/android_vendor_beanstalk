@@ -278,6 +278,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.bs.version=$(BS_VERSION) \
   ro.modversion=$(BS_VERSION)
 
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+  vendor/cm/build/target/product/security/lineage
+
 -include vendor/cm-priv/keys/keys.mk
 
 BS_DISPLAY_VERSION := $(BS_VERSION)
