@@ -228,6 +228,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# OmniRom packages
+PRODUCT_PACKAGES += \
+    OmniStyle
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
