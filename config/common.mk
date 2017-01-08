@@ -279,7 +279,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(BS_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-  vendor/cm/build/target/product/security/lineage
+  vendor/beanstalk/build/target/product/security/lineage
 
 -include vendor/cm-priv/keys/keys.mk
 
