@@ -144,7 +144,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     BeanStalkPapers \
     OmniSwitch \
-    CMFileManager \
     CMSettingsProvider \
     LineageSetupWizard \
     Eleven \
