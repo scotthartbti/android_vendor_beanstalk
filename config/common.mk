@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     CMFileManager \
     CMSettingsProvider \
-    CyanogenSetupWizard \
+    LineageSetupWizard \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
