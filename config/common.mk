@@ -252,7 +252,7 @@ PRODUCT_PACKAGES += \
 
 # OMS MASQUERADE
 PRODUCT_PACKAGES += \
-    masquerade
+    ThemeInterfacer
 
 # OMS Verified
 PRODUCT_PROPERTY_OVERRIDES := \
