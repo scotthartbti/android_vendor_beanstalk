@@ -247,8 +247,13 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
+    procrank
+
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
     su
+endif
 
 # OMS MASQUERADE
 PRODUCT_PACKAGES += \
@@ -257,9 +262,6 @@ PRODUCT_PACKAGES += \
 # OMS Verified
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
