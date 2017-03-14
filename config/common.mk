@@ -263,6 +263,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
 BeanStalk_Version=7.1.2
