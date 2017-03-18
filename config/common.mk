@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniJaws \
     CMSettingsProvider \
-    CustomTiles \
     LineageSetupWizard \
     Eleven \
     ExactCalculator \
