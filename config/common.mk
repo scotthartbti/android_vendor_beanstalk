@@ -262,13 +262,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
-# Copy Magisk zip
+# Make it conditional
+ifeq ($(WITH_SU),true)
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
+endif
+
+ifneq ($(WITH_SU),true)
+# Conditionally Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
-# Magisk Manager
+# Conditionally compile Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
+endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
