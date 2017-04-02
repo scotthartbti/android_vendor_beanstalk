@@ -252,6 +252,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
 endif
 
 # OMS MASQUERADE
@@ -262,13 +264,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
-# Copy Magisk zip
+ifneq ($(WITH_SU),true)
+# Conditionally copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
+endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
