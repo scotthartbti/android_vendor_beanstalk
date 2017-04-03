@@ -17,7 +17,10 @@ LOCAL_PATH := $(call my-dir)
 #
 # Prebuilt APKs
 #
-ifneq ($(WITH_SU),true)
+
+include $(ANDROID_BUILD_TOP)/device/*/$(BS_BUILD)/BoardConfig.mk
+
+ifneq ($(USE_SU),true)
 include $(CLEAR_VARS)
 LOCAL_MODULE := MagiskManager
 LOCAL_MODULE_OWNER := beanstalk
