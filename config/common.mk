@@ -249,9 +249,21 @@ PRODUCT_PACKAGES += \
     procrank
 
 # Conditionally build in su
-ifeq ($(WITH_SU),true)
+ifeq ($(USE_SU),true)
 PRODUCT_PACKAGES += \
     su
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
+
+else
+
+# Conditionally copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
 endif
 
 # OMS MASQUERADE
@@ -261,14 +273,6 @@ PRODUCT_PACKAGES += \
 # OMS Verified
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
-
-# Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
-
-# Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 

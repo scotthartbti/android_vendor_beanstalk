@@ -17,6 +17,11 @@ LOCAL_PATH := $(call my-dir)
 #
 # Prebuilt APKs
 #
+
+ifneq ($(USE_SU),true)
+
+$(file > $(ANDROID_BUILD_TOP)/out/target/common/with_su,false)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := MagiskManager
 LOCAL_MODULE_OWNER := beanstalk
@@ -26,3 +31,9 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
+
+else
+
+$(file > $(ANDROID_BUILD_TOP)/out/target/common/with_su,true)
+
+endif
