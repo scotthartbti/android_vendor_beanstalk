@@ -267,9 +267,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_COPY_FILES += \
     vendor/beanstalk/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
-# Magisk Manager
 PRODUCT_PACKAGES += \
-    MagiskManager
+    MagiskManager \
+    Turbo
 
 DEVICE_PACKAGE_OVERLAYS += vendor/beanstalk/overlay/common
 
